@@ -42,7 +42,7 @@ header {
 }
 
 .nav-links a:hover, .activo {
-  background-color: red;
+  background-color: #003f8a;
   border-radius: 5px;
 }
 .menu-hamburguesa {
@@ -132,7 +132,7 @@ button {
 }
 
 button:hover {
-  background-color: red;
+  background-color: #003f8a;
 }
 
 /* Estilos para formularios */
@@ -193,7 +193,7 @@ textarea {
 }
 
 .carrusel-buttons button:hover {
-  background-color: red;
+  background-color: #003f8a;
 }
 
 /* Contacto */
@@ -226,7 +226,7 @@ textarea {
 }
 
 .contacto-form button:hover {
-  background-color: red;
+  background-color: #003f8a;
 }
 
 .contacto-info {
