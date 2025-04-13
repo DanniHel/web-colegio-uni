@@ -1,0 +1,297 @@
+/* Reset de márgenes y paddings */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  color: #333;
+}
+
+/* Estilos para el encabezado */
+header {
+  background-color: #0057b7;
+  color: white;
+  padding: 1rem 0;
+}
+
+/* --- Estilos base para navbar --- */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #0057b7;
+  color: white;
+  padding: 1rem 2rem;
+  position: relative;
+}
+
+.nav-links {
+  display: flex;
+  gap: 20px;
+  list-style: none;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  padding: 0.5rem;
+}
+
+.nav-links a:hover, .activo {
+  background-color: red;
+  border-radius: 5px;
+}
+.menu-hamburguesa {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+}
+
+.menu-hamburguesa div {
+  width: 25px;
+  height: 3px;
+  background-color: white;
+  margin: 4px;
+  border-radius: 2px;
+}
+
+/* --- Estilos responsivos para móvil --- */
+@media (max-width: 768px) {
+  .nav-links {
+    flex-direction: column;
+    background-color: #0057b7;
+    position: absolute;
+    top: 70px;
+    right: 0;
+    width: 100%;
+    display: none;
+  }
+
+  .nav-links.active {
+    display: flex;
+  }
+
+  .menu-hamburguesa {
+    display: flex;
+  }
+}
+
+
+/* Estilos para el main */
+main {
+  padding: 3rem 1rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Estilos de secciones generales */
+section {
+  margin-bottom: 2rem;
+}
+
+h2, h3 {
+  margin-bottom: 1rem;
+  font-size: 2rem;
+  color: #0057b7;
+}
+
+h4 {
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+}
+
+p {
+  font-size: 1rem;
+  line-height: 1.6;
+  margin-bottom: 1rem;
+}
+
+/* Estilos de listas */
+ul {
+  list-style-type: none;
+  padding-left: 20px;
+}
+
+ul li {
+  font-size: 1rem;
+  margin: 5px 0;
+}
+
+/* Botones */
+button {
+  background-color: #0057b7;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: red;
+}
+
+/* Estilos para formularios */
+input, textarea {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+textarea {
+  resize: vertical;
+}
+
+/* Carrusel de testimonios */
+.carrusel {
+  max-width: 700px;
+  margin: 2rem auto;
+  position: relative;
+  overflow: hidden;
+}
+
+.slides {
+  display: flex;
+  transition: transform 0.5s ease;
+}
+
+.slide {
+  min-width: 100%;
+  box-sizing: border-box;
+  padding: 1rem;
+  text-align: center;
+}
+
+.slide img {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+
+.carrusel-buttons {
+  text-align: center;
+  margin-top: 10px;
+}
+
+.carrusel-buttons button {
+  background: #0057b7;
+  border: none;
+  color: #fff;
+  padding: 10px;
+  margin: 0 5px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.carrusel-buttons button:hover {
+  background-color: red;
+}
+
+/* Contacto */
+.contacto-form {
+  max-width: 600px;
+  margin: 0 auto;
+  background-color: #f4f4f4;
+  padding: 2rem;
+  border-radius: 8px;
+}
+
+.contacto-form input,
+.contacto-form textarea {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+.contacto-form button {
+  background-color: #0057b7;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1.1rem;
+}
+
+.contacto-form button:hover {
+  background-color: red;
+}
+
+.contacto-info {
+  margin-top: 3rem;
+  text-align: center;
+}
+
+.contacto-info p {
+  margin: 5px 0;
+}
+
+.mapa {
+  margin-top: 2rem;
+  height: 300px;
+  background: #ddd;
+  text-align: center;
+  line-height: 300px;
+  font-size: 1.5rem;
+  color: #555;
+}
+
+/* Estilo para el footer */
+footer {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+}
+
+/* Estilos Responsivos */
+@media screen and (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .nav-links {
+    display: none;
+    width: 100%;
+    flex-direction: column;
+    padding: 10px 0;
+  }
+
+  .nav-links li {
+    text-align: center;
+    width: 100%;
+  }
+
+  .nav-links a {
+    padding: 12px;
+    width: 100%;
+    text-align: center;
+  }
+
+  .nav-links.active {
+    display: flex;
+  }
+
+  .menu-hamburguesa {
+    display: flex;
+  }
+}
+
+/* Estilo cuando se hace click en el menú hamburguesa */
+.nav-links.active {
+  display: flex;
+  gap: 10px;
+}

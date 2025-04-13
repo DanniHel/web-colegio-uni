@@ -1,0 +1,85 @@
+<!-- index.html -->
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Inicio - Mi Colegio</title>
+    <link rel="stylesheet" href="css/estilos.css" />
+  </head>
+
+  <body>
+    <header>
+      <nav class="navbar">
+        <h1>Mi Colegio</h1>
+        <div class="menu-hamburguesa" onclick="toggleMenu()">
+          <div></div>
+          <div></div>
+          <div></div>
+        </div>
+        <ul class="nav-links">
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="nosotros.html">Nosotros</a></li>
+          <li><a href="niveles.html">Niveles</a></li>
+          <li><a href="sedes.html">Sedes</a></li>
+          <li><a href="eventos.html">Eventos</a></li>
+          <li><a href="plataformas.html">Plataformas</a></li>
+          <li><a href="admision.html">Admisión</a></li>
+          <!--<li><a href="comunidad.html">Comunidad</a></li>-->
+          <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section class="banner">
+        <h2>Bienvenidos a Mi Colegio</h2>
+        <div class="banner-imagenes">
+          <img src="assets/img/sede1.jpg" alt="Sede 1" />
+          <img src="assets/img/sede2.jpg" alt="Sede 2" />
+          <img src="assets/img/alumnos.jpg" alt="Alumnos" />
+        </div>
+      </section>
+
+      <section class="mision-vision">
+        <h2>Misión, Visión y Valores</h2>
+        <div class="grid-3">
+          <div>
+            <h3>Misión</h3>
+            <p>Formar ciudadanos íntegros...</p>
+          </div>
+          <div>
+            <h3>Visión</h3>
+            <p>Ser líderes en educación...</p>
+          </div>
+          <div>
+            <h3>Valores</h3>
+            <p>Respeto, responsabilidad, solidaridad...</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="video">
+        <h2>Video Institucional</h2>
+        <video controls width="100%">
+          <source src="assets/videos/institucional.mp4" type="video/mp4" />
+          Tu navegador no admite video HTML5.
+        </video>
+      </section>
+
+      <section class="accesos-rapidos">
+        <h2>Accesos Rápidos</h2>
+        <div class="accesos-grid">
+          <a href="https://aula.virtual" target="_blank">Aula Virtual</a>
+          <a href="admision.html">Matrícula</a>
+          <a href="contacto.html">Contacto</a>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <p>&copy; 2025 Mi Colegio - Todos los derechos reservados</p>
+    </footer>
+    <script type="text/jscript" src="js/script.js"></script>
+  </body>
+</html>

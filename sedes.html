@@ -1,0 +1,94 @@
+<!-- sedes.html -->
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sedes - Mi Colegio</title>
+    <link rel="stylesheet" href="css/estilos.css" />
+  </head>
+  <body>
+    <header>
+      <nav class="navbar">
+        <h1>Mi Colegio</h1>
+        <div class="menu-hamburguesa" onclick="toggleMenu()">
+          <div></div>
+          <div></div>
+          <div></div>
+        </div>
+        <ul class="nav-links">
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="nosotros.html">Nosotros</a></li>
+          <li><a href="niveles.html">Niveles</a></li>
+          <li><a href="sedes.html" class="activo">Sedes</a></li>
+          <li><a href="eventos.html">Eventos</a></li>
+          <li><a href="plataformas.html">Plataformas</a></li>
+          <li><a href="admision.html">Admisión</a></li>
+          <!--<li><a href="comunidad.html">Comunidad</a></li>-->
+          <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main class="sedes">
+      <!-- Sede Central -->
+      <section class="sede">
+        <h2>Sede Central</h2>
+        <p><strong>Dirección:</strong> Av. Principal 123, Ciudad Centro</p>
+        <div class="mapa">
+          <iframe
+            src="https://maps.google.com/maps?q=Av.%20Principal%20123&t=&z=15&ie=UTF8&iwloc=&output=embed"
+            width="100%"
+            height="300"
+            loading="lazy"></iframe>
+        </div>
+        <div class="galeria">
+          <img src="assets/img/central1.jpg" alt="Aula Sede Central" />
+          <img src="assets/img/central2.jpg" alt="Patio Central" />
+        </div>
+        <p><strong>Contacto:</strong> (01) 123-4567 · central@micolegio.edu.pe</p>
+      </section>
+
+      <!-- Sede Norte -->
+      <section class="sede">
+        <h2>Sede Norte</h2>
+        <p><strong>Dirección:</strong> Calle del Saber 456, Zona Norte</p>
+        <div class="mapa">
+          <iframe
+            src="https://maps.google.com/maps?q=Calle%20del%20Saber%20456&t=&z=15&ie=UTF8&iwloc=&output=embed"
+            width="100%"
+            height="300"
+            loading="lazy"></iframe>
+        </div>
+        <div class="galeria">
+          <img src="assets/img/norte1.jpg" alt="Laboratorio Sede Norte" />
+          <img src="assets/img/norte2.jpg" alt="Cancha deportiva" />
+        </div>
+        <p><strong>Contacto:</strong> (01) 765-4321 · norte@micolegio.edu.pe</p>
+      </section>
+
+      <!-- Sede Sur -->
+      <section class="sede">
+        <h2>Sede Sur</h2>
+        <p><strong>Dirección:</strong> Av. Cultura 789, Zona Sur</p>
+        <div class="mapa">
+          <iframe
+            src="https://maps.google.com/maps?q=Av.%20Cultura%20789&t=&z=15&ie=UTF8&iwloc=&output=embed"
+            width="100%"
+            height="300"
+            loading="lazy"></iframe>
+        </div>
+        <div class="galeria">
+          <img src="assets/img/sur1.jpg" alt="Biblioteca Sede Sur" />
+          <img src="assets/img/sur2.jpg" alt="Salón de clases Sede Sur" />
+        </div>
+        <p><strong>Contacto:</strong> (01) 321-9876 · sur@micolegio.edu.pe</p>
+      </section>
+    </main>
+
+    <footer>
+      <p>&copy; 2025 Mi Colegio - Todos los derechos reservados</p>
+    </footer>
+    <script type="text/jscript" src="js/script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,93 @@
+<!-- eventos.html -->
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Eventos y Noticias - Mi Colegio</title>
+    <link rel="stylesheet" href="css/estilos.css" />
+  </head>
+  <body>
+    <header>
+      <nav class="navbar">
+        <h1>Mi Colegio</h1>
+        <div class="menu-hamburguesa" onclick="toggleMenu()">
+          <div></div>
+          <div></div>
+          <div></div>
+        </div>
+        <ul class="nav-links">
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="nosotros.html">Nosotros</a></li>
+          <li><a href="niveles.html">Niveles</a></li>
+          <li><a href="sedes.html">Sedes</a></li>
+          <li><a href="eventos.html" class="activo">Eventos</a></li>
+          <li><a href="plataformas.html">Plataformas</a></li>
+          <li><a href="admision.html">Admisión</a></li>
+          <!--<li><a href="comunidad.html">Comunidad</a></li>-->
+          <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main class="eventos-blog">
+      <h2>Eventos y Noticias</h2>
+
+      <!-- Evento 1 -->
+      <article class="evento-card">
+        <img src="assets/img/feria-ciencia.jpg" alt="Feria de Ciencia" />
+        <div class="evento-contenido">
+          <span class="fecha">12 de abril 2025</span>
+          <h3>Feria de Ciencia y Tecnología</h3>
+          <p>
+            Los estudiantes de secundaria presentarán proyectos innovadores en robótica, energías renovables y más.
+            ¡Están todos invitados!
+          </p>
+        </div>
+      </article>
+
+      <!-- Evento 2 -->
+      <article class="evento-card">
+        <img src="assets/img/dia-deporte.jpg" alt="Día del Deporte" />
+        <div class="evento-contenido">
+          <span class="fecha">5 de marzo 2025</span>
+          <h3>Día del Deporte</h3>
+          <p>
+            Una jornada de integración llena de competencias deportivas entre todos los niveles educativos. ¡No te lo
+            pierdas!
+          </p>
+        </div>
+      </article>
+
+      <!-- Evento 3 -->
+      <article class="evento-card">
+        <img src="assets/img/convocatoria.jpg" alt="Convocatoria de becas" />
+        <div class="evento-contenido">
+          <span class="fecha">28 de febrero 2025</span>
+          <h3>Convocatoria a Becas 2025</h3>
+          <p>
+            Abierto el proceso de postulación para becas escolares por excelencia académica y situación socioeconómica.
+          </p>
+        </div>
+      </article>
+
+      <!-- Evento 4 -->
+      <article class="evento-card">
+        <img src="assets/img/cronograma.jpg" alt="Cronograma académico" />
+        <div class="evento-contenido">
+          <span class="fecha">Todo el año</span>
+          <h3>Cronograma Académico</h3>
+          <p>
+            Consulta aquí todas las fechas importantes del año escolar: inicio de clases, evaluaciones, vacaciones y
+            más.
+          </p>
+        </div>
+      </article>
+    </main>
+
+    <footer>
+      <p>&copy; 2025 Mi Colegio - Todos los derechos reservados</p>
+    </footer>
+    <script type="text/jscript" src="js/script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,148 @@
+<!-- comunidad.html -->
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Comunidad - Mi Colegio</title>
+    <link rel="stylesheet" href="css/estilos.css" />
+    <style>
+      /* Carrusel básico */
+      .carrusel {
+        max-width: 700px;
+        margin: 2rem auto;
+        position: relative;
+        overflow: hidden;
+      }
+
+      .slides {
+        display: flex;
+        transition: transform 0.5s ease;
+      }
+
+      .slide {
+        min-width: 100%;
+        box-sizing: border-box;
+        padding: 1rem;
+        text-align: center;
+      }
+
+      .slide img {
+        width: 100px;
+        height: 100px;
+        object-fit: cover;
+        border-radius: 50%;
+        margin-bottom: 10px;
+      }
+
+      .slide p {
+        font-style: italic;
+      }
+
+      .carrusel-buttons {
+        text-align: center;
+        margin-top: 10px;
+      }
+
+      .carrusel-buttons button {
+        background: #0057b7;
+        border: none;
+        color: #fff;
+        padding: 10px;
+        margin: 0 5px;
+        border-radius: 5px;
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <nav class="navbar">
+        <h1>Mi Colegio</h1>
+        <div class="menu-hamburguesa" onclick="toggleMenu()">
+          <div></div>
+          <div></div>
+          <div></div>
+        </div>
+        <ul class="nav-links">
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="nosotros.html">Nosotros</a></li>
+          <li><a href="niveles.html">Niveles</a></li>
+          <li><a href="sedes.html">Sedes</a></li>
+          <li><a href="eventos.html">Eventos</a></li>
+          <li><a href="plataformas.html">Plataformas</a></li>
+          <li><a href="admision.html">Admisión</a></li>
+          <li><a href="comunidad.html" class="activo">Comunidad</a></li>
+          <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main class="comunidad">
+      <h2>Testimonios y Comunidad</h2>
+
+      <!-- Carrusel de Testimonios -->
+      <section class="carrusel">
+        <div class="slides" id="slides">
+          <div class="slide">
+            <img src="assets/img/testimonio1.jpg" alt="Padre de familia" />
+            <h4>Lucía Ramírez (Madre de familia)</h4>
+            <p>"El colegio ha sido una segunda casa para mis hijos. Estoy feliz con los valores que promueven."</p>
+          </div>
+          <div class="slide">
+            <img src="assets/img/testimonio2.jpg" alt="Alumno egresado" />
+            <h4>Carlos Mendoza (Egresado)</h4>
+            <p>"Gracias al acompañamiento vocacional, logré ingresar a la universidad que soñaba."</p>
+          </div>
+          <div class="slide">
+            <img src="assets/img/testimonio3.jpg" alt="Docente" />
+            <h4>María Torres (Docente)</h4>
+            <p>
+              "Formar parte de esta comunidad educativa ha sido una de las experiencias más enriquecedoras de mi vida."
+            </p>
+          </div>
+        </div>
+        <div class="carrusel-buttons">
+          <button onclick="moverSlide(-1)">⟵</button>
+          <button onclick="moverSlide(1)">⟶</button>
+        </div>
+      </section>
+
+      <!-- Convenios -->
+      <section>
+        <h3>Convenios Institucionales</h3>
+        <ul>
+          <li>Universidad Nacional de Ingeniería</li>
+          <li>Universidad de Lima</li>
+          <li>Alianza con Fundación Jóvenes Talentos</li>
+        </ul>
+      </section>
+
+      <!-- Actividades Sociales -->
+      <section>
+        <h3>Actividades de Responsabilidad Social</h3>
+        <p>
+          Participamos activamente en campañas solidarias, voluntariados, actividades ecológicas y programas de apoyo
+          comunitario.
+        </p>
+      </section>
+    </main>
+
+    <footer>
+      <p>&copy; 2025 Mi Colegio - Todos los derechos reservados</p>
+    </footer>
+
+    <!-- Script para carrusel -->
+    <script>
+      let slideIndex = 0;
+      const slides = document.getElementById("slides");
+
+      function moverSlide(n) {
+        const total = slides.children.length;
+        slideIndex = (slideIndex + n + total) % total;
+        slides.style.transform = `translateX(-${slideIndex * 100}%)`;
+      }
+    </script>
+    <script type="text/jscript" src="js/script.js"></script>
+  </body>
+</html>
