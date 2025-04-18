@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Inicio - Mi Colegio</title>
     <link rel="stylesheet" href="css/estilos.css" />
+    <link rel="stylesheet" href="css/estilo02.css" />
   </head>
 
   <body>
@@ -30,16 +31,23 @@
         </ul>
       </nav>
     </header>
-
-    <main>
-      <section class="banner">
-        <h2>Bienvenidos a Mi Colegio</h2>
-        <div class="banner-imagenes">
-          <img src="assets/img/sede1.jpg" alt="Sede 1" />
-          <img src="assets/img/sede2.jpg" alt="Sede 2" />
-          <img src="assets/img/alumnos.jpg" alt="Alumnos" />
+    <section class="banner-slider">
+        <div class="slider">
+          <div class="slide active">
+            <img src="assets/img/20221115_120940.jpg" alt="Sede 1" />
+          </div>
+          <div class="slide">
+            <img src="assets/img/20221115_132212.jpg" alt="Sede 2" />
+          </div>
+          <div class="slide">
+            <img src="assets/img/20221107_100744.jpg" alt="Alumnos" />
+          </div>
+          <button class="prev" onclick="moverSlide(-1)">&#10094;</button>
+          <button class="next" onclick="moverSlide(1)">&#10095;</button>
         </div>
       </section>
+    <main>
+      
 
       <section class="mision-vision">
         <h2>Misión, Visión y Valores</h2>

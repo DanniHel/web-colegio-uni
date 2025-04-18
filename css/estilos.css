@@ -15,18 +15,23 @@ body {
 header {
   background-color: #303090;
   color: white;
-  padding: 1rem 0;
 }
+
 
 /* --- Estilos base para navbar --- */
 .navbar {
-  display: flex;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  background-color: #303090; /* opcional: semitransparente */
+  padding: 1rem 2rem;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #303090;
   color: white;
-  padding: 1rem 2rem;
-  position: relative;
 }
 
 .nav-links {
@@ -40,17 +45,6 @@ header {
   text-decoration: none;
   padding: 0.5rem;
 }
-
-#activos{
-  color: #303090;
-}
-
-.nav-links a:hover, .activo {
-  background-color: #FFF100;
-  border-radius: 5px;
-  color: #303090;
-}
-
 
 .menu-hamburguesa {
   display: none;
@@ -87,12 +81,22 @@ header {
   }
 }
 
+#activos{
+  color: #303090;
+}
+
+.nav-links a:hover, .activo {
+  background-color: #FFF100;
+  border-radius: 5px;
+  color: #303090;
+}
 
 /* Estilos para el main */
 main {
   padding: 3rem 1rem;
   max-width: 1200px;
   margin: 0 auto;
+  padding-top: 80px
 }
 
 /* Estilos de secciones generales */
@@ -168,21 +172,6 @@ textarea {
 .slides {
   display: flex;
   transition: transform 0.5s ease;
-}
-
-.slide {
-  min-width: 100%;
-  box-sizing: border-box;
-  padding: 1rem;
-  text-align: center;
-}
-
-.slide img {
-  width: 100px;
-  height: 100px;
-  object-fit: cover;
-  border-radius: 50%;
-  margin-bottom: 10px;
 }
 
 .carrusel-buttons {
@@ -269,7 +258,7 @@ footer {
 /* Estilos Responsivos */
 @media screen and (max-width: 768px) {
   .navbar {
-    flex-direction: column;
+    flex-direction: row;
     align-items: flex-start;
   }
 
