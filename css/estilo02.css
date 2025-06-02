@@ -33,7 +33,8 @@
 }
 
 /* Botones de navegación */
-.prev, .next {
+.prev,
+.next {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
@@ -54,4 +55,112 @@
   right: 20px;
 }
 
+/* ---------------------------- */
+.fb-post-row {
+  display: flex;
+  flex-wrap: wrap;     /* permite que baje a la siguiente fila */
+  gap: 20px;
+  justify-content: center; /* centra las tarjetas si hay espacio */
+  padding: 10px 0;
+  
+  width: 95vw;       /* casi todo el ancho de la ventana */
+  max-width: 1400px; /* para no pasarse demasiado en pantallas muy grandes */
+  margin: 0 auto;    /* centra el contenedor horizontalmente */
+}
 
+
+/* Cada tarjeta */
+.fb-post-slide,
+.fb-post-ver-mas {
+  background-color: white;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  border-radius: 12px;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  /* ancho flexible para que encaje bien en filas */
+  flex: 1 1 320px; /* crecer, reducir, base de 320px */
+  max-width: 320px;
+  height: 600px;
+}
+
+/* Hover */
+.fb-post-slide:hover,
+.fb-post-ver-mas:hover {
+  box-shadow: 0 8px 24px rgba(0,0,0,0.15);
+  transform: translateY(-5px);
+}
+
+.fb-post-slide iframe {
+  width: 100% !important;
+  height: 100% !important;
+  border: none;
+  display: block;
+}
+
+/* Tarjeta "Ver más" */
+.fb-post-ver-mas {
+  background-color: #303090;
+  cursor: pointer;
+  max-width: 160px;
+  flex: 0 1 160px;  /* no crecer, puede reducirse, base 160px */
+  height: 600px;
+}
+
+.fb-post-ver-mas a {
+  color: white;
+  font-size: 1.5rem;
+  font-weight: 700;
+  text-decoration: none;
+  padding: 20px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50%;
+  border-radius: 12px;
+  transition: background-color 0.3s ease;
+}
+
+.fb-post-ver-mas a:hover {
+  background-color: #fff100;
+  color: #303090;
+}
+
+/* Responsive: ajustamos tamaños en pantallas más pequeñas */
+
+@media (max-width: 1024px) {
+  .fb-post-slide {
+    max-width: 280px;
+    height: 530px;
+  }
+  .fb-post-ver-mas {
+    max-width: 140px;
+    height: 530px;
+  }
+}
+
+@media (max-width: 768px) {
+  .fb-post-slide {
+    max-width: 220px;
+    height: 420px;
+  }
+  .fb-post-ver-mas {
+    max-width: 110px;
+    height: 420px;
+  }
+}
+
+@media (max-width: 480px) {
+  .fb-post-slide {
+    max-width: 180px;
+    height: 350px;
+  }
+  .fb-post-ver-mas {
+    max-width: 90px;
+    height: 350px;
+  }
+}

@@ -4,8 +4,9 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Admisión y Matrícula - Mi Colegio</title>
+    <title>Admisión y Matrícula - UNI</title>
     <link rel="stylesheet" href="css/estilos.css" />
+    <link rel="stylesheet" href="fontawesome/css/all.css" />
   </head>
   <body>
     <header>
@@ -107,6 +108,25 @@
     <footer>
       <p>&copy; 2025 Mi Colegio - Todos los derechos reservados</p>
     </footer>
+    <!-- Botones flotantes con tooltip personalizado -->
+    <div class="botones-flotantes">
+      <a href="tel:+51938865416" class="btn-telefono tooltip" data-tooltip="Llamar" id="callButton">
+        <i class="fas fa-phone icono"></i>
+      </a>
+
+      <a
+        href="https://wa.me/51938865416?text=Hola%2C%20quisiera%20informaci%C3%B3n"
+        target="_blank"
+        rel="noopener noreferrer"
+        class="btn-whatsapp tooltip"
+        data-tooltip="WhatsApp"
+        ><i class="fab fa-whatsapp"></i
+      ></a>
+
+      <a href="#" class="btn-top tooltip" data-tooltip="Ir arriba" onclick="scrollToTop(event)">
+        <i class="fas fa-arrow-up"></i>
+      </a>
+    </div>
     <script type="text/jscript" src="js/script.js"></script>
   </body>
 </html>

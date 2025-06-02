@@ -4,9 +4,10 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Inicio - Mi Colegio</title>
+    <title>UNI Urubamba</title>
     <link rel="stylesheet" href="css/estilos.css" />
     <link rel="stylesheet" href="css/estilo02.css" />
+    <link rel="stylesheet" href="fontawesome/css/all.css" />
   </head>
 
   <body>
@@ -32,37 +33,68 @@
       </nav>
     </header>
     <section class="banner-slider">
-        <div class="slider">
-          <div class="slide active">
-            <img src="assets/img/20221115_120940.jpg" alt="Sede 1" />
-          </div>
-          <div class="slide">
-            <img src="assets/img/20221115_132212.jpg" alt="Sede 2" />
-          </div>
-          <div class="slide">
-            <img src="assets/img/20221107_100744.jpg" alt="Alumnos" />
-          </div>
-          <button class="prev" onclick="moverSlide(-1)">&#10094;</button>
-          <button class="next" onclick="moverSlide(1)">&#10095;</button>
+      <div class="slider">
+        <div class="slide active">
+          <img src="assets/img/20221115_120940.jpg" alt="Sede 1" />
         </div>
-      </section>
+        <div class="slide">
+          <img src="assets/img/20221115_132212.jpg" alt="Sede 2" />
+        </div>
+        <div class="slide">
+          <img src="assets/img/20221107_100744.jpg" alt="Alumnos" />
+        </div>
+        <button class="prev" onclick="moverSlide(-1)">&#10094;</button>
+        <button class="next" onclick="moverSlide(1)">&#10095;</button>
+      </div>
+    </section>
     <main>
-      
+      <section class="noticiass">
+        <h2>Últimas Publicaciones en Facebook</h2>
+        <div class="fb-post-row">
+          <!-- Publicación 1 -->
+          <div class="fb-post-slide">
+            <iframe
+              src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fweb.facebook.com%2Fphoto.php%3Ffbid%3D10232763275357877%26set%3Da.3830566956322%26type%3D3&show_text=true"
+              width="500"
+              height="600"
+              frameborder="0"
+              allowfullscreen
+              scrolling="no"></iframe>
+          </div>
 
-      <section class="mision-vision">
-        <h2>Misión, Visión y Valores</h2>
-        <div class="grid-3">
-          <div>
-            <h3>Misión</h3>
-            <p>Formar ciudadanos íntegros...</p>
+          <!-- Publicación 2 -->
+          <div class="fb-post-slide">
+            <iframe
+              src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fweb.facebook.com%2Fphoto.php%3Ffbid%3D10232763242237049%26set%3Da.3830566956322%26type%3D3&show_text=true"
+              width="500"
+              height="600"
+              frameborder="0"
+              allowfullscreen
+              scrolling="no"></iframe>
           </div>
-          <div>
-            <h3>Visión</h3>
-            <p>Ser líderes en educación...</p>
+
+          <!-- Publicación 3 -->
+          <div class="fb-post-slide">
+            <iframe
+              src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fweb.facebook.com%2FUNI.Cusco%2Fposts%2Fpfbid027Ddwg9ZMHD25DbtVrSP8BginKyN4f5vCArD6hW6AzGC4V15k7cK4iFNEQ6iuq37ql&show_text=true"
+              width="500"
+              height="751"
+              style="border: none; overflow: hidden"
+              scrolling="no"
+              frameborder="0"
+              allowfullscreen="true"
+              allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
           </div>
-          <div>
-            <h3>Valores</h3>
-            <p>Respeto, responsabilidad, solidaridad...</p>
+
+          <!-- Ver más -->
+          <div class="fb-post-ver-mas">
+            <a
+              href="nosotros.html"
+              target="_blank"
+              rel="noopener"
+              aria-label="Ver más publicaciones en Facebook">
+              Ver más
+            </a>
           </div>
         </div>
       </section>
@@ -88,6 +120,26 @@
     <footer>
       <p>&copy; 2025 Mi Colegio - Todos los derechos reservados</p>
     </footer>
+    <!-- Botones flotantes con tooltip personalizado -->
+    <div class="botones-flotantes">
+      <a href="tel:+51938865416" class="btn-telefono tooltip" data-tooltip="Llamar" id="callButton">
+        <i class="fas fa-phone icono"></i>
+      </a>
+
+      <a
+        href="https://wa.me/51938865416?text=Hola%2C%20quisiera%20informaci%C3%B3n"
+        target="_blank"
+        rel="noopener noreferrer"
+        class="btn-whatsapp tooltip"
+        data-tooltip="WhatsApp"
+        ><i class="fab fa-whatsapp"></i
+      ></a>
+
+      <a href="#" class="btn-top tooltip" data-tooltip="Ir arriba" onclick="scrollToTop(event)">
+        <i class="fas fa-arrow-up"></i>
+      </a>
+    </div>
+
     <script type="text/jscript" src="js/script.js"></script>
   </body>
 </html>

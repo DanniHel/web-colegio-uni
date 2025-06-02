@@ -1,7 +1,7 @@
 function toggleMenu() {
-    const navLinks = document.querySelector('.nav-links');
-    navLinks.classList.toggle('active');
-  }
+  const navLinks = document.querySelector(".nav-links");
+  navLinks.classList.toggle("active");
+}
 
 let slideIndex = 0;
 const slides = document.querySelectorAll(".slide");
@@ -29,3 +29,26 @@ setInterval(() => {
 
 // Inicializar
 mostrarSlide(slideIndex);
+
+function scrollToTop(event) {
+  event.preventDefault();
+  window.scrollTo({ top: 0, behavior: "smooth" });
+}
+
+const callBtn = document.getElementById("callButton");
+const phoneNumber = "+51938865416"; // Corregido a Perú
+
+function isMobile() {
+  return /Mobi|Android/i.test(navigator.userAgent);
+}
+
+callBtn.addEventListener("click", function (e) {
+  if (isMobile()) {
+    // Si es móvil, abre el enlace tel: para llamar
+    window.location.href = "tel:" + phoneNumber;
+  } else {
+    // Si no es móvil, muestra un mensaje o evita el daño
+    e.preventDefault();
+    alert("Parece que estás en un ordenador sin aplicación de llamadas. Por favor, usa un móvil para llamar.");
+  }
+});
