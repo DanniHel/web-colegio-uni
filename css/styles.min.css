@@ -443,6 +443,11 @@ p {
 .programs-section {
   background-color: white;
   position: relative;
+  padding: var(--space-xl) 0;
+}
+
+#programas {
+  scroll-margin-top: 80px;
 }
 
 .programs-grid {
@@ -621,6 +626,7 @@ p {
 /* Noticias */
 .news-section {
   background-color: white;
+  padding: var(--space-xl) 0;
 }
 
 .news-grid {
@@ -910,6 +916,7 @@ p {
     text-align: center;
   }
 
+  
   .dropdown-content {
     position: static;
     opacity: 1;
@@ -918,6 +925,8 @@ p {
     background-color: transparent;
     box-shadow: none;
     padding: var(--space-sm) 0;
+    background-color: rgba(255, 255, 255, 0.1);
+    
   }
 
   .dropdown-content a {
