@@ -5,9 +5,9 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta name="description" content="Institución educativa con academia preuniversitaria en Urubamba" />
         <title>UNI Urubamba - Inicio</title>
-        <link rel="stylesheet" href="css/styles.min.css" />
-        <link rel="stylesheet" href="css/estilo-index.css" />
-        <link rel="stylesheet" href="fontawesome/css/all.css" />
+        <link rel="stylesheet" href="assets/css/styles.min.css" />
+        <link rel="stylesheet" href="assets/css/estilo-index.css" />
+        <link rel="stylesheet" href="assets/fontawesome/css/all.css" />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
         <link
@@ -33,23 +33,24 @@
                 <nav class="navbar" aria-label="Navegación principal">
                     <ul class="nav-links">
                         <li><a href="index.html" class="active">Inicio</a></li>
-                        <li><a href="nosotros.html">Nosotros</a></li>
+                        <li><a href="nosotros/index.html">Nosotros</a></li>
                         <li class="dropdown">
-                            <a href="niveles.html" aria-haspopup="true" aria-expanded="false">
-                            Niveles <i class="fas fa-chevron-down"></i></a>
+                            <a href="#" aria-haspopup="true" aria-expanded="false">
+                                Niveles <i class="fas fa-chevron-down"></i>
+                            </a>
                             <div class="dropdown-content">
-                                <a href="niveles.html#primaria">Primaria</a>
-                                <a href="niveles.html#secundaria">Secundaria</a>
-                                <a href="niveles.html#preuniversitario">Preuniversitario</a>
+                                <a href="niveles/primaria/index.html">Primaria</a>
+                                <a href="niveles/secundaria/index.html">Secundaria</a>
+                                <a href="niveles/preuni/index.html">Preuniversitario</a>
                             </div>
                         </li>
-                        <li><a href="admision.html">Admisión</a></li>
-                        <li><a href="contacto.html">Contacto</a></li>
+                        <li><a href="admision/index.html">Admisión</a></li>
+                        <li><a href="contactos/index.html">Contactos</a></li>
                     </ul>
                 </nav>
 
                 <div class="header-cta">
-                    <a href="admision.html" class="btn btn-primary">Preinscripción</a>
+                    <a href="admision/index.html" class="btn btn-primary">Preinscripción</a>
                 </div>
             </div>
         </header>
@@ -105,7 +106,7 @@
                             Formación integral que desarrolla habilidades cognitivas, sociales y emocionales desde los
                             primeros años.
                         </p>
-                        <a href="niveles.html" class="btn-link">Ver más <i class="fas fa-arrow-right"></i></a>
+                        <a href="niveles/primaria/index.html" class="btn-link">Ver más <i class="fas fa-arrow-right"></i></a>
                     </div>
 
                     <div class="program-card highlighted">
@@ -117,7 +118,7 @@
                             Programa académico que fortalece el pensamiento crítico, científico y humanista en los
                             adolescentes.
                         </p>
-                        <a href="niveles.html#preuniversitario" class="btn-link"
+                        <a href="niveles/secundaria/index.html" class="btn-link"
                             >Ver más <i class="fas fa-arrow-right"></i
                         ></a>
                     </div>
@@ -128,7 +129,7 @@
                         </div>
                         <h3>Academia Preuniversitaria</h3>
                         <p>Preparación especializada para ingresar a las mejores universidades del país.</p>
-                        <a href="niveles.html#talleres" class="btn-link">Ver más <i class="fas fa-arrow-right"></i></a>
+                        <a href="niveles/preuni/index.html" class="btn-link">Ver más <i class="fas fa-arrow-right"></i></a>
                     </div>
                 </div>
             </div>
@@ -175,7 +176,7 @@
                 </div>
 
                 <div class="section-cta">
-                    <a href="noticias.html" class="btn btn-outline">Ver todas las noticias</a>
+                    <a href="noticias/index.html" class="btn btn-outline">Ver todas las noticias</a>
                 </div>
             </div>
         </section>
@@ -185,11 +186,17 @@
             <div class="container">
                 <div class="footer-grid">
                     <div class="footer-col">
-                        <img src="img/logo.jpg" alt="UNI Urubamba" width="180" height="60" />
+                        <img src="assets/img/logo.jpg" alt="UNI Urubamba" width="180" height="60" />
                         <p>Formando líderes con excelencia académica y valores humanos desde 2010.</p>
 
                         <div class="social-links">
-                            <a href="https://web.facebook.com/uni.union.de.nuevos.inteligentes" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                            <a
+                                href="https://web.facebook.com/uni.union.de.nuevos.inteligentes"
+                                aria-label="Facebook"
+                                target="_blank"
+                                rel="noopener noreferrer">
+                                <i class="fab fa-facebook-f"></i>
+                            </a>
                             <!--
                             <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
                             <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
@@ -243,7 +250,12 @@
 
         <!-- Botones flotantes mejorados -->
         <div class="floating-buttons">
-            <a href="https://wa.me/+51938865416" class="floating-btn whatsapp-btn" aria-label="Contactar por WhatsApp">
+            <a
+                href="https://wa.me/+51938865416"
+                class="floating-btn whatsapp-btn"
+                aria-label="Contactar por WhatsApp"
+                target="_blank"
+                rel="noopener noreferrer">
                 <i class="fab fa-whatsapp"></i>
                 <span class="tooltip">WhatsApp</span>
             </a>
@@ -260,7 +272,7 @@
         </div>
 
         <!-- Scripts optimizados -->
-        <script src="js/main.min.js" defer></script>
+        <script src="assets/js/main.min.js" defer></script>
 
         <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
     </body>
